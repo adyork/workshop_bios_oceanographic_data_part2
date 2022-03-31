@@ -5,6 +5,8 @@ import sys
 import os
 import shutil
 
+os.chdir('C:\\Users\\ksoenen\\Google Drive (ksoenen@whoi.edu)\\BCODMO\\projects\\BIOs\\workshop_data_basics')
+
 BOILERPLATE = (
     'AUTHORS',
     'CITATION',
