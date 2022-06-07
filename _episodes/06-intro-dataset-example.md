@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Dataset Example"
-teaching: 15
-exercises: 3
+teaching: 10
+exercises: 0
 questions:
 - "How do we plot and explore data we downloaded from BCO-DMO?"
 objectives:
