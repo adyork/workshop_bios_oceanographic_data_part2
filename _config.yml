@@ -8,6 +8,7 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: Carpentries Incubator
+# bco-dmo: BCO-DMO specific class based on carpentries template
 carpentry: "bco-dmo"
 
 # Overall title for pages.
