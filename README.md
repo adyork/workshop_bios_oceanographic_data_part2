@@ -31,3 +31,5 @@ Edit [config file](https://github.com/BCODMO/workshop_bios_oceanographic_data/bl
 HTML pages for web can be found under [\_includes](https://github.com/BCODMO/workshop_bios_oceanographic_data/tree/gh-pages/_includes)
 
 Change nav bar logo to BCO-DMO in [navbar html](https://github.com/BCODMO/workshop_bios_oceanographic_data/blob/gh-pages/_includes/navbar.html)
+
+Fix the [extra's](https://github.com/BCODMO/workshop_bios_oceanographic_data/tree/gh-pages/_extras)
