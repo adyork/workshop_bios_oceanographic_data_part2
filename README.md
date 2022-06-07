@@ -27,3 +27,5 @@ To cite this lesson, please consult with [CITATION](CITATION)
 The pages to contribute information to this lesson can be found in the folder \_episodes. Files are written in markdown (.md). Number the markdown files in the order they need to appear.
 
 Edit [config file](https://github.com/BCODMO/workshop_bios_oceanographic_data/blob/gh-pages/_config.yml) to set up main title of the lesson. 
+
+HTML pages for web can be found under [\_includes](https://github.com/BCODMO/workshop_bios_oceanographic_data/tree/gh-pages/_includes)
