@@ -88,4 +88,3 @@ your primary spreadsheet program - there are others (gnumeric, Calc
 from OpenOffice), and their functionality is similar, but Excel seems
 to be the program most used by biologists and ecologists.
 
-
