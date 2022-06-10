@@ -10,13 +10,6 @@ keypoints:
 - "Good data organization is the foundation of any research project."
 ---
 
-## Background: What is a CTD?
-
->> CTD stands for **conductivity, temperature, and depth**, and refers to a package of electronic instruments that measure these properties (see more about CTDs at  [https://oceanexplorer.noaa.gov/facts/ctd.html](https://oceanexplorer.noaa.gov/facts/ctd.html)
-
-![NOAA CTD](https://oceanexplorer.noaa.gov/explorations/16arctic/logs/july24/media/coastguardctd_hires.jpg)
-Members of the U.S. Coast Guard prepare the CTD for launch. Image courtesy of Caitlin Bailey, GFOE, The Hidden Ocean 2016: Chukchi Borderlands. [Image source: NOAA](https://oceanexplorer.noaa.gov/explorations/16arctic/logs/july24/july24.html)
-
 ## Assessing a Dataset
 
 Let's take a look at an example CTD Dataset Metadata Page at BCO-DMO. 
