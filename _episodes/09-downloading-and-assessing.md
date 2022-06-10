@@ -13,10 +13,19 @@ keypoints:
 
 ### Assessing a Dataset
 
+Let's take a look at an example Dataset Metadata Page at BCO-DMO.
+
+![AE1910_CTD_page1](../fig/AE1910_CTD_page1.png)
+
+## Reviewing the metadata
+
+Does the metadata include important context for using these data?  Does it indicate anything about the data quality? Is it preliminary or final?
+
+Can you find information about what is in each data column?  What are the units?
 
 
-### Downloading a Dataset
+## Downloading a Dataset
 
-Instead of using the erddap server, you can download a whole dataset from the BCO-DMO landing page itself. 
+Instead of using the erddap server, you can download a whole dataset from the BCO-DMO landing page itself. There are buttons to easily download data in many file formats.
 
-[BATS bottle badges]![dates, exersize 1](../fig/BATS_bottle_badges.png)
+![BATS bottle badges](../fig/BATS_bottle_badges.png)
