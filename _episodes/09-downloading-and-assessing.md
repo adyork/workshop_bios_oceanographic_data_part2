@@ -26,6 +26,27 @@ Does the metadata include important context for using these data?  Does it indic
 Can you find information about what is in each data column?  What are the units?
 
 
+
+
+
+> ## Exercise: Finding units
+>
+> Challenge: pulling month, day and year out of dates 
+>
+>
+> Go to **Dataset: AE1910 CTD Profiles**: https://www.bco-dmo.org/dataset/774958 which serves a data table.  
+>
+> Can you find which column(s) contain information about how deep the measurements were taken?
+>
+> What are the column(s) names?  What are the units?
+>
+>
+> > ## Solution
+> > ![exercise vertical cols](../fig/AE1910_CTD_vertical_solution.png)
+> > {: .output}
+> {: .solution}
+{: .challenge}
+
 ## Downloading a Dataset
 
 Instead of using the erddap server, you can download a whole dataset from the BCO-DMO landing page itself. There are buttons to easily download data in many file formats.
