@@ -16,3 +16,7 @@ keypoints:
 
 
 ### Downloading a Dataset
+
+Instead of using the erddap server, you can download a whole dataset from the BCO-DMO landing page itself. 
+
+[Picture badges]

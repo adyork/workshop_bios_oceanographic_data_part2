@@ -13,6 +13,14 @@ keypoints:
 - "Use conditional formatting (cautiously) to check for invalid data."
 ---
 
+
+
+Cover quality control, but only CONCEPTS, not the walkthrough that is being talk about here 
+
+
+
+
+
 When you have a well-structured data table, you can use several simple
 techniques within your spreadsheet to ensure the data you enter is
 free of errors. These approaches include techniques that are
@@ -44,7 +52,7 @@ in each data column.
    other values.
 
 ![Image of Data Validation window](../fig/data_validation_window.png)
-   
+
 4\. After selecting an item enter any additional details. For example, if you've
    chosen a list of values, enter a comma-delimited list of allowable
    values in the `Source` box.
