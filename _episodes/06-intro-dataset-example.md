@@ -10,41 +10,10 @@ keypoints:
 - "Good data organization is the foundation of any research project."
 ---
 
-Good data organization is the foundation of your research
-project. Most researchers have data or do data entry in
-spreadsheets. Spreadsheet programs are very useful graphical
-interfaces for designing data tables and handling very basic data
-quality control functions.
 
-### Working with a Dataset from BCO-DMO
+## Background: What is a CTD?
 
-After this lesson, you will be able to:
-- Apply best practices in data table formatting we learned in previous lessons
-- Utilize basic quality control features and data manipulation practices
-- Perform basic statistical analyses and plotting.
-- Effectively export data from spreadsheet programs
-- Learn the benefits and drawbacks to analyzing data in spreadsheets.
-- Learn about other ways to analyze data other than spreadsheets.
+>> CTD stands for **conductivity, temperature, and depth**, and refers to a package of electronic instruments that measure these properties (see more about CTDs at  [https://oceanexplorer.noaa.gov/facts/ctd.html](https://oceanexplorer.noaa.gov/facts/ctd.html)
 
-
-### What this lesson will not teach you
-
-- How to do more advanced *statistics* in a spreadsheet
-- How to *write code* in spreadsheet programs
-
-If you're looking to do this, a good reference is
-[Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/), published by O'Reilly.
-
----
-
-### Why aren't we teaching data analysis in spreadsheets
-
-- Data analysis in spreadsheets usually requires a lot of manual
-  work. If you want to change a parameter or run an analysis with a
-  new dataset, you usually have to redo everything by hand. (We do
-  know that you can create macros, but see the next point.)
-
-- It is also difficult to track or reproduce statistical or plotting
-  analyses done in spreadsheet programs when you want to go back to
-  your work or someone asks for details of your analysis.
-
+![NOAA CTD](https://oceanexplorer.noaa.gov/explorations/16arctic/logs/july24/media/coastguardctd_hires.jpg =250x)
+Members of the U.S. Coast Guard prepare the CTD for launch. Image courtesy of Caitlin Bailey, GFOE, The Hidden Ocean 2016: Chukchi Borderlands. [Image source: NOAA](https://oceanexplorer.noaa.gov/explorations/16arctic/logs/july24/july24.html)
