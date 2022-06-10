@@ -27,8 +27,6 @@ Can you find information about what is in each data column?  What are the units?
 
 
 
-
-
 > ## Exercise: Finding units
 >
 > Go to **Dataset: AE1910 CTD Profiles**: [https://www.bco-dmo.org/dataset/774958](https://www.bco-dmo.org/dataset/774958) which serves a data table.  
@@ -51,6 +49,28 @@ Can you find information about what is in each data column?  What are the units?
 > > {: .output}
 > {: .solution}
 {: .challenge}
+
+
+> ## Exercise: Looking at methods to understand your data
+>
+> Go to **Dataset: AE1910 CTD Profiles**: [https://www.bco-dmo.org/dataset/774958](https://www.bco-dmo.org/dataset/774958) 
+>
+> > **Challenge question 1: What part of the cast are in these data?**
+> > These are CTD profiles (AKA "casts") which are deployed over the side of a ship, go down through the water column, and back up again.  We need to know which part of the profile we are working with.  We could have data from the entire profile (up and down casts), or just the up cast, or just the downcast.
+> >
+> > **Challenge question 2: Raw or Processed?**
+> > It's also important to know whether we are working with raw data directly off of an instrument, or whether it went through any processing.  For CTD data it is standard to perform processing so we want to make sure we are working with processed not raw data.  
+> > > Processing can include error correction, grouping data together by depth (AKA "binning"), and calculating new parameters (salinity and density can be calculated from temperature and conductivity).
+> >
+> > ## Solution
+> > In the section called `Acquisition description` it says these data are from the up cast (not the down cast).  In the section called `Processing Description` it says these data were processed and binned to 1-meter intervals.  This means that when we look at the data table we should see a row of data per meter.
+> >
+> > ![methods](../fig/methods_exercise.png)
+> > 
+> > {: .output}
+> {: .solution}
+{: .challenge}
+
 
 ## Downloading a Dataset
 
