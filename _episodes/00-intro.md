@@ -7,11 +7,11 @@ questions:
 objectives:
 - "Overview of Data Wrangling Aspects"
 keypoints:
-- "Good Data Management pracitces for tabular data."
+- "Good Data Management practices for tabular data."
 - "Working with a real life data example"
 ---
 
-Good data organization is the foundation of your research project. Most researchers have data or do data entry in spreadsheets. Spreadsheet programs are very useful graphical interfaces for designing data tables and handling very basic data quality control functions.
+Today we will give you some hands-on data management skills and how to apply these skills to datasets. Both datasets that you create yourself and reusing datasets from others. 
 
 ### Part 1: Good approaches to Tabular Data Formatting
 
@@ -22,11 +22,8 @@ After this lesson, you will be able to:
 - Utilize basic quality control features and data manipulation practices
 - Effectively export data from spreadsheet programs
 
-Spreadsheets are good for data entry. Therefore we have a lot of data
-in spreadsheets. 
-Much of your time as a researcher will be spent in this 'data wrangling' stage.
-It's not the most fun, but it's necessary. We'll teach you how to think
-about data organization and some practices for more effective data wrangling.
+Spreadsheets are good for data entry. Therefore we have a lot of data in spreadsheets. 
+Much of your time as a researcher will be spent in this 'data wrangling' stage. It's not the most fun, but it's necessary. We'll teach you how to think about data organization and some practices for more effective data wrangling.
 
 
 
