@@ -15,7 +15,7 @@ keypoints:
 
 Let's take a look at an example Dataset Metadata Page at BCO-DMO. 
 
-**Dataset: AE1910 CTD Profiles**: https://www.bco-dmo.org/dataset/774958
+**Dataset: AE1910 CTD Profiles**: [https://www.bco-dmo.org/dataset/774958](https://www.bco-dmo.org/dataset/774958)
 
 ![AE1910_CTD_page1](../fig/AE1910_CTD_page1.png)
 
