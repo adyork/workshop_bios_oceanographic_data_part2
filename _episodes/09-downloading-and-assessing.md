@@ -34,20 +34,22 @@ Can you find information about what is in each data column?  What are the units?
 > Challenge: pulling month, day and year out of dates 
 >
 >
-> Go to **Dataset: AE1910 CTD Profiles**: https://www.bco-dmo.org/dataset/774958 which serves a data table.  
+> Go to **Dataset: AE1910 CTD Profiles**: [https://www.bco-dmo.org/dataset/774958](https://www.bco-dmo.org/dataset/774958) which serves a data table.  
 >
 > Can you find which column(s) contain information about how deep the measurements were taken?
 >
-> What are the column(s) names?  What are the units?
->
+> What are the column(s) names?  
+> 
+> What are the units?
 >
 > > ## Solution
-> > In the section called "Parameters" has this information.
+> > In the section called** "Parameters" **has this information.
 > >
 > > ![exercise vertical cols](../fig/AE1910_CTD_vertical_solution.png)
 > > 
-> > You can also see this information by viewing the data table with the ![view table](../fig/view_table.png) button.  However since you don't have descriptions of the columns here, it is best to get the information from the "Parameters" section as shown above.
-> >  ![exercise vertical cols](../fig/vertical_solution2.png)
+> > You can also see this information by viewing the data table with the <img src = "../fig/view_table.png"> button.  However since you don't have descriptions of the columns here, it is best to get the information from the "Parameters" section as shown above.
+> > 
+> > ![exercise vertical cols2](../fig/vertical_solution2.png)
 > > 
 > > {: .output}
 > {: .solution}
