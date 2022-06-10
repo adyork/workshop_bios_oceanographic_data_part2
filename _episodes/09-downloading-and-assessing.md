@@ -77,6 +77,6 @@ Can you find information about what is in each data column?  What are the units?
 
 ## Downloading a Dataset
 
-Instead of using the erddap server, you can download a whole dataset from the BCO-DMO landing page itself. There are buttons to easily download data in many file formats.
+Previously we covered some ways you can [access data from the ERDDAP server](workshop_bios_oceanographic_data/08_erddap_catalog_search/index.html), but you can also download a whole dataset from the Dataset Metadata Page itself. There are buttons to easily download data in many file formats.
 
 ![AE1910_CTD bottle badges](../fig/AE1910_CTD_badges.png)
