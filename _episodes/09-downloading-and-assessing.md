@@ -42,7 +42,13 @@ Can you find information about what is in each data column?  What are the units?
 >
 >
 > > ## Solution
+> > In the section called "Parameters" has this information.
+> >
 > > ![exercise vertical cols](../fig/AE1910_CTD_vertical_solution.png)
+> > 
+> > You can also see this information by viewing the data table with the ![view table](../fig/view_table.png) button.  However since you don't have descriptions of the columns here, it is best to get the information from the "Parameters" section as shown above.
+> >  ![exercise vertical cols](../fig/vertical_solution2.png)
+> > 
 > > {: .output}
 > {: .solution}
 {: .challenge}
