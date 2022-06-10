@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data Wrangling in Spreadsheets"
+title: "Tabular Data & Spreadsheets"
 teaching: 5
 exercises: 0
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data Wrangling in Spreadsheets"
+title: "Data Wrangling"
 teaching: 5
 exercises: 0
 questions:
@@ -110,4 +110,28 @@ In this lesson we're going to talk about:
 3. [Dates as data](../03-dates-as-data/)
 4. [Quality control](../04-quality-control/)
 5. [Exporting data](../05-exporting-data/)
+
+### Other Data Types
+
+Tabular data but also model data, experimental data. f
+
+documents
+
+Experiments
+
+Fasta
+
+Spectral Counts
+
+Code
+
+Images
+
+Statistical
+
+Maps
+
+
+
+
 
