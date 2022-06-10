@@ -31,9 +31,6 @@ Can you find information about what is in each data column?  What are the units?
 
 > ## Exercise: Finding units
 >
-> Challenge: pulling month, day and year out of dates 
->
->
 > Go to **Dataset: AE1910 CTD Profiles**: [https://www.bco-dmo.org/dataset/774958](https://www.bco-dmo.org/dataset/774958) which serves a data table.  
 >
 > Can you find which column(s) contain information about how deep the measurements were taken?
