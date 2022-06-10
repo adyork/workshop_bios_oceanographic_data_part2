@@ -80,3 +80,10 @@ Can you find information about what is in each data column?  What are the units?
 Previously we covered some ways you can [access data from the ERDDAP server](workshop_bios_oceanographic_data/08_erddap_catalog_search/index.html), but you can also download a whole dataset from the Dataset Metadata Page itself. There are buttons to easily download data in many file formats.
 
 ![AE1910_CTD bottle badges](../fig/AE1910_CTD_badges.png)
+
+You can click the `CSV` button to download the data table in csv-format.  You can then open it in the editor of your choice. Below is what it looks like in Excel.
+
+![csv in excel](../fig/ctd_data_in_excel.png)
+
+
+
