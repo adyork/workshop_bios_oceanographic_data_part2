@@ -19,4 +19,4 @@ keypoints:
 
 Instead of using the erddap server, you can download a whole dataset from the BCO-DMO landing page itself. 
 
-[Picture badges]
+[BATS bottle badges]![dates, exersize 1](../fig/BATS_bottle_badges.png)
