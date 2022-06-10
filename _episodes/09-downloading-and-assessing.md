@@ -19,6 +19,8 @@ Let's take a look at an example Dataset Metadata Page at BCO-DMO.
 
 ![AE1910_CTD_page1](../fig/AE1910_CTD_page1.png)
 
+>> CTD stands for **conductivity, temperature, and depth**, and refers to a package of electronic instruments that measure these properties (see more about CTDs at  [https://oceanexplorer.noaa.gov/facts/ctd.html](https://oceanexplorer.noaa.gov/facts/ctd.html)
+
 ## Reviewing the metadata
 
 Does the metadata include important context for using these data?  Does it indicate anything about the data quality? Is it preliminary or final?
