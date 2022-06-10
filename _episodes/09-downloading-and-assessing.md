@@ -30,4 +30,4 @@ Can you find information about what is in each data column?  What are the units?
 
 Instead of using the erddap server, you can download a whole dataset from the BCO-DMO landing page itself. There are buttons to easily download data in many file formats.
 
-![BATS bottle badges](../fig/BATS_bottle_badges.png)
+![AE1910_CTD bottle badges](../fig/AE1910_CTD_badges.png)
