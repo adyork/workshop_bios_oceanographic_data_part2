@@ -17,7 +17,7 @@ So far we have tackled the general concepts around data management: F.A.I.R conc
 
 
 
-![recap](C:\Users\ksoenen\Desktop\bios_pictures\recap.png)
+![recap](../fig/recap.png)
 
 
 

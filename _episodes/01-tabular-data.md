@@ -14,30 +14,25 @@ keypoints:
 - "Working with a real life data example"
 ---
 
-Good data organization is the foundation of your research project. Most researchers have data or do data entry in spreadsheets. Spreadsheet programs are very useful graphical interfaces for designing data tables and handling basic data quality control. 
+### Data organization
 
-### What these lessons will not teach you
+Good data organization is the foundation of your research project and should already be part in the acquisition phase of a research project. 
 
-- How to do *statistics* in a spreadsheet
-- How to *write code* in spreadsheet programs
+<img src="../fig/data-life-cycle-acquisition.png" alt="data-life-cycle-acquisition" style="zoom:30%;" />
 
-If you're looking to do this, a good reference is [Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/), published by O'Reilly.
+The structure and format of datasets can be planned and described in the data management plan of the project. Important to note that this is a living document and can be adjusted as you move forward. But it helps as a framework at the start. 
 
----
-
-### Why aren't we teaching data analysis in spreadsheets
-
-- Data analysis in spreadsheets usually requires a lot of manual work. If you want to change a parameter or run an analysis with a new dataset, you usually have to redo everything by hand. (We do know that you can create macros, but see the next point.)
-  
-- It is also difficult to track or reproduce statistical or plotting analyses done in spreadsheet programs when you want to go back to your work or someone asks for details of your analysis.
+![dmp-data-organization](../fig/dmp-data-organization.png)
 
 ### Spreadsheet programs
+
+Most researchers have data or do data entry in spreadsheets. Spreadsheet programs are very useful graphical interfaces for designing data tables and handling basic data quality control. 
 
 Many spreadsheet programs are available. Since most participants utilize Excel as their primary spreadsheet program, this lesson will make use of Excel examples.
 
 NOTE: Excel is proprietary software, which means that it is owned by a company that is restricting the ways it can be used. A free spreadsheet program that can also be used is LibreOffice.
 
-
+![libreoffice-excel](../fig/libreoffice-excel.png)
 
 Commands may differ a bit between programs, but the general idea is the same.
 
@@ -66,9 +61,7 @@ Generating **tables for publications** in a spreadsheet is not optimal - often, 
 reporting key summary statistics in a way that is **not really meant to be read as data**, and often involves special formatting
 (merging cells, creating borders, making it pretty). We advise you to do this sort of operation within your document editing software.
 
-The latter two applications, generating statistics and figures, should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to **replicate your steps** (much less retrace anyone else's), particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a 
-command-line based statistics program like R or SAS, it’s practically impossible to apply a calculation to one observation in your 
-dataset but not another unless you’re doing it on purpose. 
+The latter two applications, generating statistics and figures, should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to **replicate your steps** (much less retrace anyone else's), particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a  command-line based statistics program like R or SAS, it’s practically impossible to apply a calculation to one observation in your  dataset but not another unless you’re doing it on purpose. 
 
 ### Using Spreadsheets for Data Entry and Cleaning
 
@@ -83,6 +76,14 @@ In this lesson we're going to talk about:
 3. [Dates as data](../03-dates-as-data/)
 4. [Quality control](../04-quality-control/)
 5. [Exporting data](../05-exporting-data/)
+
+### Why aren't we teaching data analysis in spreadsheets
+
+- Data analysis in spreadsheets usually requires a lot of manual work. If you want to change a parameter or run an analysis with a new dataset, you usually have to redo everything by hand. (We do know that you can create macros, but see the next point.)
+
+- It is also difficult to track or reproduce statistical or plotting analyses done in spreadsheet programs when you want to go back to your work or someone asks for details of your analysis.
+
+
 
 
 
