@@ -12,20 +12,11 @@ keypoints:
 - "Treating dates as multiple pieces of data rather than one makes them easier to handle."
 ---
 
-Dates in spreadsheets are stored in a single column. While this seems the
-most natural way to record dates, it actually is not best
-practice. A spreadsheet application will display the dates in a
-seemingly correct way (to a human observer) but how it actually handles
-and stores the dates may be problematic.
+Dates in spreadsheets are stored in a single column. While this seems the most natural way to record dates, it actually is not best practice. A spreadsheet application will display the dates in a seemingly correct way (to a human observer) but how it actually handles and stores the dates may be problematic.
 
-In particular, please remember that functions that are valid for a given
-spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice,
-Gnumeric, etc.) are usually guaranteed to be compatible only within the same
-family of products. If you will later need to export the data and need to
-conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
+In particular, please remember that functions that are valid for a given spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice, Gnumeric, etc.) are usually guaranteed to be compatible only within the same family of products. If you will later need to export the data and need to conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
 
-Additionally, Excel can [turn things that aren't dates into dates](https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/), 
-for example names or identifiers like MAR1, DEC1, OCT4. So if you're avoiding the date format overall, it's easier to identify these issues. 
+Additionally, Excel can [turn things that aren't dates into dates](https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/), for example names or identifiers like MAR1, DEC1, OCT4. So if you're avoiding the date format overall, it's easier to identify these issues. 
 
 > ## Exercise 
 >
@@ -105,7 +96,7 @@ Say you had a sampling plan where you needed to sample every thirty seven days.
 In another cell, you could type:
     
     =B2+37
-    
+
 And it would return
 
     8-Aug

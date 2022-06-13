@@ -37,6 +37,8 @@ Many spreadsheet programs are available. Since most participants utilize Excel a
 
 NOTE: Excel is proprietary software, which means that it is owned by a company that is restricting the ways it can be used. A free spreadsheet program that can also be used is LibreOffice.
 
+
+
 Commands may differ a bit between programs, but the general idea is the same.
 
 > ## Exercise
@@ -86,23 +88,9 @@ In this lesson we're going to talk about:
 
 ### Other Data Types
 
-Tabular data but also model data, experimental data. f
+The focus of this class is tabular data. However, it is important to note that there are other data types out there such as documents, experimental data, fasta files, spectral counts, code, images, maps. 
 
-documents
 
-Experiments
-
-Fasta
-
-Spectral Counts
-
-Code
-
-Images
-
-Statistical
-
-Maps
 
 
 
