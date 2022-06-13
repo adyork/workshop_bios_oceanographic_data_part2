@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Dataset Example"
+title: "Part II: Downloading and Analyzing a Dataset"
 teaching: 10
 exercises: 0
 questions:
