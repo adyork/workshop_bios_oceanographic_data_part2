@@ -1,5 +1,5 @@
 ---
-title: "Part II: Picking a Dataset and Working With it"
+title: "Part II: Working with a Dataset"
 teaching: 10
 exercises: 0
 questions:
