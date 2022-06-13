@@ -1,6 +1,6 @@
 ---
 title: "Data Wrangling"
-teaching: 5
+teaching: 2
 exercises: 0
 questions:
 - "What will we cover this morning?"
@@ -11,7 +11,17 @@ keypoints:
 - "Working with a real life data example"
 ---
 
-Today we will give you some hands-on data management skills and how to apply these skills to datasets. Both datasets that you create yourself and reusing datasets from others. 
+## Deep Dive into Data Management
+
+So far we have tackled the general concepts around data management: F.A.I.R concepts and the data life cycle. And where BCO-DMO fits in that picture. 
+
+
+
+![recap](C:\Users\ksoenen\Desktop\bios_pictures\recap.png)
+
+
+
+Today we will dive deeper into practical data management and teach skills that can be applied to real-life datasets. 
 
 ### Part 1: Good approaches to Tabular Data Formatting
 
@@ -27,7 +37,7 @@ Much of your time as a researcher will be spent in this 'data wrangling' stage. 
 
 
 
-### Part 2: Working with a BCO-DMO Dataset 
+### Part 2: Manipulation of F.A.I.R datasets
 
 After this lesson, you will be able to:
 
@@ -38,3 +48,15 @@ After this lesson, you will be able to:
 - Learn the benefits and drawbacks to analyzing data in spreadsheets.
 - Learn about other ways to analyze data other than spreadsheets.
 
+
+
+### Content
+
+1. Tabular Data and Spreadsheets
+2. Dates
+3. Exercise "Be a Data Manager"
+4. Exporting Data
+5. Assessing metadata
+6. Download data
+7. Data manipulation in spreadsheets
+8. What is Next? 
