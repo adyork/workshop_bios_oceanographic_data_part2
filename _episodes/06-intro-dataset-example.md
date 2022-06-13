@@ -3,9 +3,11 @@ title: "Part II: Working with a Dataset"
 teaching: 10
 exercises: 0
 questions:
-- "How do we plot and explore data we downloaded from BCO-DMO?"
+- How do assess datasets to make sure they are ready for analyses?
+- How do you download the dataset you choose?
+- How do you plot and explore data?"
 objectives:
-- "Practice best practices for organizing and analyzing data."
+- "Practice best practices for manipulating and analyzing data. Learn what to look for in metadata to make sure a dataset is ready for analysis."
 keypoints:
 - "Good data organization is the foundation of any research project."
 ---
