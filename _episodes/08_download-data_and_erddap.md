@@ -16,6 +16,10 @@ keypoints:
 ---
 {% include links.md %}
 
+Getting the niskin data after subsetting with erddap.
+
+
+
 # Exploring an ERDDAP data catalog
 
 In the chapter before we have seen that there are many ERDDAP servers to chose from. In this chapter we will dive a bit deeper in how to search for data in an ERDDAP catalog. 
