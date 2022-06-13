@@ -3,7 +3,7 @@ title: "Part II: Working with a BCO-DMO Dataset"
 teaching: 10
 exercises: 0
 questions:
-- How do assess datasets to make sure they are ready for analyses?
+- How do you assess datasets to make sure they are ready for analyses?
 - How do you download the dataset you choose?
 - How do you plot and explore data?"
 objectives:
@@ -12,6 +12,13 @@ keypoints:
 - "Good data organization is the foundation of any research project."
 ---
 
+In this part of the lesson we will:
+- Learn how to assess a dataset to make sure it is ready for analysis.
+- Download a dataset from BCO-DMO.
+- Learn the benefits and drawbacks to analyzing data in spreadsheets.
+- Utilize basic quality control features and data manipulation practices.
+- Perform basic statistical analyses and plotting in Excel.
+- Learn about other ways to analyze data other than spreadsheets.
 
 ## Background: What is a CTD?
 
