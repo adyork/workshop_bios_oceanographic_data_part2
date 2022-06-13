@@ -1,5 +1,5 @@
 ---
-title: "Part II: Working with a Dataset"
+title: "Part II: Working with a BCO-DMO Dataset"
 teaching: 10
 exercises: 0
 questions:
