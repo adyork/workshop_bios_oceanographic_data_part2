@@ -30,7 +30,9 @@ Most researchers have data or do data entry in spreadsheets. Spreadsheet program
 
 Many spreadsheet programs are available. Since most participants utilize Excel as their primary spreadsheet program, this lesson will make use of Excel examples.
 
-NOTE: Excel is proprietary software, which means that it is owned by a company that is restricting the ways it can be used. A free spreadsheet program that can also be used is LibreOffice.
+![survey-result](../fig/survey-results-tools.png)
+
+NOTE: Excel is **proprietary software**, which means that it is owned by a company that is restricting the ways it can be used. A free spreadsheet program that can also be used is LibreOffice.
 
 ![libreoffice-excel](../fig/libreoffice-excel.png)
 
