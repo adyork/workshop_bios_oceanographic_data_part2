@@ -1,5 +1,5 @@
 ---
-title: "Part II: Downloading and Analyzing a Dataset"
+title: "Part II: Picking a Dataset and Working With it"
 teaching: 10
 exercises: 0
 questions:
