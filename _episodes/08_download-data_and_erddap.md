@@ -38,9 +38,21 @@ BCO-DMO has its own erddap server that is continuously being updated. We added E
 
 ## Downloading Data
 
-For this exercise we will try to download the data from the BATS that serve at BCO-DMO.
+For this example, we'll zoom in on the BATS CTD dataset that BCO-DMO is serving. The dataset landing page can be found here: [https://www.bco-dmo.org/dataset/3918](https://www.bco-dmo.org/dataset/3918)
 
-[https://www.bco-dmo.org/dataset/3918](https://www.bco-dmo.org/dataset/3918)
+This dataset has data from 1988 to 2016, so it is a very big dataset. Clicking on the "view table" button will try to pull up the data table, but it is very big and not easily to pull up and to download.
+
+<img src="../fig/erddap-bats-dataview.png" alt="erddap-bats-bcodmo" style="zoom:30%;" />
+
+**Subsetting a dataset in ERDDAP**
+
+An easier way to download the data is to subset it. Which means taking a slice of the dataset that you are interested in particulary.
+
+<img src="../fig/erddap-subsetdata.png" alt="erddap-subset" style="zoom:30%;" />
+
+<img src="../fig/erddap-subsetting.png" alt="erddap-subsetting" style="zoom:30%;" />
+
+
 
 
 
@@ -73,24 +85,5 @@ For example Google dataset search:
 * search for the dataset id of the dataset above: bcodmo_dataset_783911
 
   ![image-20211026155703527](../assets/img/image-20211026155703527.png)
-
-
-
-## Subsetting data
-
-
-
-<img src="../fig/erddap-subsetdata.png" alt="erddap-subset" style="zoom:30%;" />
-
-
-
-Click on the data button. Here is the link to the dataset in erddap: https://erddap.bco-dmo.org/erddap/tabledap/bcodmo_dataset_783911.html  
-
-![image-20211026193729341](../assets/img/image-20211026193729341.png)
-
-### Set the file type 
-
-### Download the data "Submit"
-
 
 
