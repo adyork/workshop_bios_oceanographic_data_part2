@@ -41,7 +41,7 @@ There are a few potential errors to be on the lookout for in your own data as we
 - [Date formatting](../03-dates-as-data/)
 
 
-## <a name="tables"></a> Using multiple tables
+## Using multiple tables
 
 A common strategy is creating multiple data tables within
 one spreadsheet. This confuses the computer, so don't do this!
@@ -58,7 +58,7 @@ refer to the same sample. This row actually represents four distinct samples
 (sample 1 for each of four different collection dates - May 29th, June 12th, June 19th, and June 26th), 
 as well as some calculated summary statistics (an average (avr) and standard error of measurement (SEM)) for two of those samples. Other rows are similarly problematic.
 
-## <a name="tabs"></a> Using multiple tabs
+## Using multiple tabs
 
 But what about workbook tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection). Say, for instance, you make a separate tab for each day you take a measurement.
 
@@ -78,7 +78,7 @@ Instead you can freeze the column headers so that they remain visible even when 
 
 [Documentation on how to freeze column headers in MS Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a)
 
-## <a name="zeros"></a> Not filling in zeros
+## Not filling in zeros
 
 It might be that when you're measuring something, it's
 usually a zero, say the number of times a rabbit
@@ -95,7 +95,7 @@ subsequent calculations or analyses. For example, the average of a set of number
 (because the computer can't guess the value of the missing observations). Because of this, it's very important to record zeros as zeros and truly missing data as nulls.
 
 
-## <a name="null"></a> Using problematic null values
+## Using problematic null values
 **Example**: using -999 or other numerical values (or zero) to represent missing data. 
 
 **Solutions**: 
@@ -113,7 +113,7 @@ Blanks (most applications) and NA (for R) are good choices. White et al, 2013, e
 ![White et al.](../fig/3_white_table_1.jpg)
 
 
-## <a name="formatting"></a> Using formatting to convey information 
+## Using formatting to convey information 
 
 **Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
 
@@ -124,7 +124,7 @@ Blanks (most applications) and NA (for R) are good choices. White et al, 2013, e
 ![good formatting](../fig/good_formatting.png)
 
 
-## <a name="formatting_pretty"></a> Using formatting to make the data sheet look pretty
+## Using formatting to make the data sheet look pretty
 
 **Example**: merging cells.
 
@@ -133,7 +133,7 @@ see associations in the data. Merged cells will make your data unreadable by sta
 such a way that you will not need to merge cells to organize your data.
 
 
-## <a name="units"></a> Placing comments or units in cells
+##  Placing comments or units in cells
 
 **Example**: Your data was collected, in part, by a summer student who you later found out was mis-identifying some of your species, some
 of the time. You want a way to note these data are suspect.
@@ -144,7 +144,7 @@ cells: ideally, all the measurements you place in one column should be in the sa
 another field and specify the units the cell is in.
 
 
-## <a name="info"></a> Entering more than one piece of information in a cell
+##  Entering more than one piece of information in a cell
 
 **Example**: You find one male, and one female of the same species. You enter this as 1M, 1F.
 
@@ -152,7 +152,7 @@ another field and specify the units the cell is in.
 If you need both these measurements, design your data sheet to include this information. For example, include one column for number of
 individuals and a separate column for sex.
 
-## <a name="field_name"></a> Using problematic field names
+## Using problematic field names
 Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be
 misinterpreted by parsers that use whitespace as delimiters and some programs don’t like field names that are text strings that start
 with numbers.  
@@ -206,7 +206,7 @@ that are excessively long. Including the units in the field names avoids confusi
 </tr>
 </table>
 
-## <a name="special"></a> Using special characters in data
+## Using special characters in data
 
 **Example**: You treat your spreadsheet program as a word processor when writing notes, for example copying data directly from Word or
 other applications.
@@ -220,7 +220,7 @@ General best practice is to avoid adding characters such as newlines, tabs, and 
 it were a simple web form that can only contain text and spaces.
 
 
-## <a name="metadata"></a> Inclusion of metadata in data table
+## Inclusion of metadata in data table
 
 **Example**: You add a legend at the top or bottom of your data table explaining column meaning, units, exceptions, etc.
 
