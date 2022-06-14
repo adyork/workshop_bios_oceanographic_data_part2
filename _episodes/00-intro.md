@@ -1,5 +1,5 @@
 ---
-title: "Introduction & Recap"
+title: "Introduction"
 teaching: 2
 exercises: 0
 questions:
@@ -34,10 +34,10 @@ Spreadsheets are good for data entry. Therefore we have a lot of data in spreads
 Table of content:
 
 1. [Tabular Data and Spreadsheets](../01-tabular-data/)
-2. Common formatting mistakes & exercise
-3. Discussion
-4. Dates are special
-5. Exporting data
+2. [Common formatting mistakes & exercise](../02-format-data/)
+3. [Discussion](../03_common-mistakes/)
+4. [Dates are special](../04-dates-as-data/)
+5. [Exporting data](../05-exporting-data.md/)
 
 
 
