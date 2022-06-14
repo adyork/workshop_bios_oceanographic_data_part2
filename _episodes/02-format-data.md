@@ -1,7 +1,7 @@
 ---
 title: "Formatting Data Tables"
-teaching: 15
-exercises: 20
+teaching: 10
+exercises: 10
 questions:
 - "How do we format data in spreadsheets for effective data use?"
 objectives:
