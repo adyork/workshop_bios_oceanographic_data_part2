@@ -1,13 +1,13 @@
 ---
-title: "What can we do next?"
-teaching: 0
-exercises: 0
+title: "Data Manipulation"
+teaching: 10
+exercises: 10
 questions:
-- "Some question
+- "Some question"
 objectives:
 - "Some objective"
 keypoints:
-- "Some keypoint"
+- "some keypoint"
 ---
 
 Compare with data manipulation in excel but with notebook with link from erddap?
