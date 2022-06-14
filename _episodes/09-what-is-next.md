@@ -1,7 +1,7 @@
 ---
-title: "Data Manipulation"
-teaching: 10
-exercises: 10
+title: "What is Next"
+teaching: 5
+exercises: 0
 questions:
 - "Some question"
 objectives:
