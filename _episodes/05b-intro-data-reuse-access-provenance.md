@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data Reuse, Access and Provencance"
+title: "Introduction to Data Reuse, Access and Provenance"
 teaching: 5
 exercises: 0
 questions:
