@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling"
+title: "Introduction & Recap"
 teaching: 2
 exercises: 0
 questions:
@@ -19,21 +19,25 @@ So far we have tackled the general concepts around data management: F.A.I.R conc
 
 ![recap](../fig/recap.png)
 
+F.A.I.R geared toward data curators rather than individual researchers, and to facilitate machine accessibility of data in addition to human readability. But you should endeavor to use resources that help move your data closer to being FAIR. BCO-DMO engages in all of the FAIR principles.
 
-
-Today we will dive deeper into practical data management and teach skills that can be applied to real-life datasets. 
+There are steps individual researchers can take to increase the “fairness” of their data. This will be the focus of today. We will dive deeper into hands-on management of data tables and the general practices of (re)using a data table. 
 
 ### Part 1: Good approaches to Tabular Data Formatting
 
-After this lesson, you will be able to:
+Spreadsheets are good for data entry. Therefore we have a lot of data in spreadsheets. Much of your time as a researcher will be spent in this 'data wrangling' stage. It's not the most fun, but it's necessary. We'll teach you how to think about data organization and some practices for more effective data wrangling. After this lesson, you will be able to:
 - Implement best practices in data table formatting  
 - Identify and address common formatting mistakes
 - Understand approaches for handling dates in spreadsheets
-- Utilize basic quality control features and data manipulation practices
 - Effectively export data from spreadsheet programs
 
-Spreadsheets are good for data entry. Therefore we have a lot of data in spreadsheets. 
-Much of your time as a researcher will be spent in this 'data wrangling' stage. It's not the most fun, but it's necessary. We'll teach you how to think about data organization and some practices for more effective data wrangling.
+Table of content:
+
+1. [Tabular Data and Spreadsheets](../01-tabular-data/)
+2. Common formatting mistakes & exercise
+3. Discussion
+4. Dates are special
+5. Exporting data
 
 
 
@@ -52,11 +56,8 @@ After this lesson, you will be able to:
 
 ### Content
 
-1. Tabular Data and Spreadsheets
-2. Dates
-3. Exercise "Be a Data Manager"
-4. Exporting Data
-5. Assessing metadata
-6. Download data
-7. Data manipulation in spreadsheets
+1. 
+2. Assessing metadata
+3. Download data
+4. Data manipulation in spreadsheets
 8. What is Next? 
