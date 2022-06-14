@@ -36,10 +36,6 @@ The advantage of a CSV file over an Excel/SPSS/etc. file is that we can open and
 
 <img src="../fig/example-csv.png" alt="example-csv" style="zoom:30%;" />
 
-
-
-
-
 Most spreadsheet programs can save to delimited text formats like CSV easily, although they may give you a warning during the file export.
 
 To save a file you have opened in Excel in CSV format:
@@ -62,6 +58,7 @@ When talking about exporting data we discussed how to export Excel file formats 
 However, there are some significant problems with this particular format. Quite often the **data values themselves may include commas (,)**. In that case, the software which you use (including Excel) will most likely incorrectly display the data in columns. This is because the commas which are a part of the data values will be interpreted as delimiters.
 
 For example, our data might look like this:	
+
 		species_id,genus,species,taxa
 		AB,Amphispiza,bilineata,Bird
 		AH,Ammospermophilus,harrisi,Rodent-not,censused

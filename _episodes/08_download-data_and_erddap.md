@@ -1,5 +1,5 @@
 ---
-title: "Finding data in the ERDDAP data catalog"
+title: "Downloading data using ERDDAP"
 teaching: 25
 exercises: 10
 questions:
@@ -14,33 +14,35 @@ keypoints:
 - "Data can be downloaded in different file formats"
 - "Constraints can be added to a dataset search"
 ---
-{% include links.md %}
-
-Getting the niskin data after subsetting with erddap.
-
-
-
 # Exploring an ERDDAP data catalog
 
-In the chapter before we have seen that there are many ERDDAP servers to chose from. In this chapter we will dive a bit deeper in how to search for data in an ERDDAP catalog. 
+### What is ERDDAP?
 
-## Finding data
+When scientists make their data available online for people to re-use  it, there can often still be barriers that stand in the way of easily  doing so. Reusing data from another source is difficult:
 
-For this example, we will use the ERDDAP operated by BCO-DMO:  go to:
+- different way of requesting data
+- different formats: you work with R while colleague is working with Matlab and the other one with python
+- Need for standardised metadata
 
-[https://erddap.bco-dmo.org/erddap/index.html](https://erddap.bco-dmo.org/erddap/index.html)
+**This is where ERDDAP comes in.** It gives data  providers the ability to, in a consistent way, download  subsets of  gridded and tabular scientific datasets in common file formats and make  graphs and maps.
 
-To view all the available datasets on this erddap server click "View a List of all 1095 datasets"
-
-![image-20211026150350923](../assets/img/image-20211026150350923.png)
+<img src="../fig/erddap.png" alt="erddap" style="zoom:20%;" />
 
 
 
-Let's now search the database for specific data. Let's search for CTD data in the Ross Sea from 2017. Type in search box: ctd "Ross Sea" 2017. This is a full text search, just like Google, use white spaces in between words and double quotes "" around phrases
+There is no “1 ERDDAP server”, instead organisations and repositories  have their own erddap server to distribute data to end users. These  users can request data and get data out in various file formats.  Many  institutes, repo’s and organizations (including [NOAA](https://coastwatch.pfeg.noaa.gov/erddap/index.html), [NASA](https://podaac-uat.jpl.nasa.gov/erddap/index.html), and [USGS](https://geoport.usgs.esipfed.org/erddap/index.html)) run ERDDAP servers  to serve their data.
 
-![image-20211026185806242](../assets/img/image-20211026185806242.png)
+BCO-DMO has its own erddap server that is continuously being updated. We added ERDDAP badges to make it easy for new users to grab the dataset in the format they need.
 
-There are a couple of datasets that are popping up in this search, but let's choose the one with DatasetID: bcodmo_dataset_783911. 
+<img src="../fig/erddap-bats.png" alt="erddap-bcodmo" style="zoom:30%;" />
+
+## Downloading Data
+
+For this exercise we will try to download the data from the BATS that serve at BCO-DMO.
+
+[https://www.bco-dmo.org/dataset/3918](https://www.bco-dmo.org/dataset/3918)
+
+
 
 ## Dataset information
 
@@ -76,6 +78,12 @@ For example Google dataset search:
 
 ## Subsetting data
 
+
+
+<img src="../fig/erddap-subsetdata.png" alt="erddap-subset" style="zoom:30%;" />
+
+
+
 Click on the data button. Here is the link to the dataset in erddap: https://erddap.bco-dmo.org/erddap/tabledap/bcodmo_dataset_783911.html  
 
 ![image-20211026193729341](../assets/img/image-20211026193729341.png)
@@ -85,22 +93,4 @@ Click on the data button. Here is the link to the dataset in erddap: https://erd
 ### Download the data "Submit"
 
 
-
-## Create a graph
-
-ERRDAP also provides a graph function for your datasets, but I will not go into this more in detail. 
-
-![image-20211026200843217](../assets/img/image-20211026200843217.png)
-
-
-
-## Exercise: Inspect BGC-Argo data
-
-> * Go to the ERDDAP server: https://polarwatch.noaa.gov/erddap/.  
-> * search “Biogeochemical-Argo” .  
-> * Q:  how many datasets are being returned?
-> * Q: What is the difference between the datasets? (Does the title give something away?)
-> * Q:  What is the time range the datasets have? (Hint click data tab)
-> * Download a dataset in .csv format that ranges in time from May 1st, 2015 until May 3rd 2015
-{: .challenge}
 
