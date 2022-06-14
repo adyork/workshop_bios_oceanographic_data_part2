@@ -56,7 +56,10 @@ Spreadsheets encompass a lot of the things we need to be able to do as researche
 - Statistics
 - Plotting
 
-We do a lot of different operations in spreadsheets. What kind of operations do you do in spreadsheets? Which ones do you think spreadsheets are good for?
+> ## Exercise
+> - What kind of operations do you do in spreadsheets?
+> - Which ones do you think spreadsheets are good for?
+> {: .callout}
 
 
 ## Problems with Spreadsheets
@@ -74,17 +77,6 @@ Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally
 ### Using Spreadsheets for Data Entry and Cleaning
 
 However, there are circumstances where you might want to use a spreadsheet program to produce “quick and dirty” calculations or figures, and data cleaning will help you use some of these features. Data cleaning also puts your data in a better format prior to importation into a statistical analysis program. 
-
-In this lesson, we will assume that you are most likely using Excel as your primary spreadsheet program - there are others (gnumeric, Calc from OpenOffice), and their functionality is similar, but Excel seems to be the program most used by biologists and ecologists.
-
-In this lesson we're going to talk about:
-
-1. [Formatting data tables in spreadsheets](../01-format-data/)
-2. [Formatting problems](../02-common-mistakes/)
-3. [Dates as data](../03-dates-as-data/)
-5. [Exporting data](../05-exporting-data/)
-
-
 
 ### Not all data is tabular
 
