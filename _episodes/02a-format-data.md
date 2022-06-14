@@ -17,6 +17,8 @@ keypoints:
 
 The most **common mistake** made is **treating spreadsheet programs like lab notebooks**, that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers don't view information the same way, and unless we explain to the computer what every single thing means (and that can be hard!), it will not be able to see how our data fits together.
 
+<img src="../fig/excel-notebook.png" alt="excel-noteook" style="zoom:30%;" />
+
 Using the power of computers, we can manage and analyze data in much more effective and faster ways, but to use that power, we have to **set up our data for the computer to be able to understand it** (and computers are very literal).
 
 This is why it’s extremely important to set up well-formatted tables from the outset - before you even start entering data from your very first preliminary experiment. **Data organization is the foundation of your research project.** It can make it easier or harder to work with your data throughout your analysis, so it's worth thinking about when you're doing your data entry or setting up your experiment. This is part of a **data management plan** and is an important step in thinking of your research project.
@@ -44,7 +46,7 @@ Put these principles in to practice today during your Exercises.
 ### Structuring data in spreadsheets
 
 
-The cardinal rule of using spreadsheet programs for data is to keep it "tidy":
+The cardinal rule of using spreadsheet programs for data is to **keep it "tidy"**:
 
 1. Put all your variables in columns - the thing you're measuring, like 'weight' or 'temperature'.
 2. Put each observation in its own row.
@@ -69,13 +71,12 @@ So, instead we should have:
 ![single-info example](../fig/single-info.png)
 
 > ## Discussion
-> If not already discussed, introduce the dataset that will be used in this
-> lesson, and in the other ecology lessons, the [Portal Project Teaching Dataset](http://www.datacarpentry.org/ecology-workshop/data/). 
->
-> The data used in the ecology lessons are observations of a small mammal community in southern Arizona. This is part of a project studying the effects of rodents and ants on the plant community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots, with different experimental manipulations controlling which rodents are allowed to access which plots.
+> If not already discussed, introduce the dataset that will be used in this lesson, and in the other ecology lessons, the [Portal Project Teaching Dataset](http://www.datacarpentry.org/ecology-workshop/data/). 
+> 
+>The data used in the ecology lessons are observations of a small mammal community in southern Arizona. This is part of a project studying the effects of rodents and ants on the plant community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots, with different experimental manipulations controlling which rodents are allowed to access which plots.
 > 
 > This is a real dataset that has been used in over 100 publications. We’ve simplified it just a little bit for the workshop, but you can download the full dataset and work with it using exactly the same tools we’ll learn about today.  
-{: .discussion}
+> {: .discussion}
 
 
 > ## Exercise
