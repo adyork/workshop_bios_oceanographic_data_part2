@@ -1,89 +1,40 @@
 ---
-title: "Downloading data using ERDDAP"
+title: "Capturing Provenance"
 teaching: 25
 exercises: 10
 questions:
-- "How do I search for data in ERDDAP?"
-- "What information does a dataset hold?"
-- "How can I subset a dataset?"
-- "How do I make a graph in ERDDAP?"
+- "What should I be recording while I do my analyses?"
 objectives:
-- "Understand all the different factors for reusing online data with ERDDAP"
+- "Train yourself to record important metadata needed for"
 keypoints:
-- "Searching an ERDDAP data catalog can be done using a web page"
-- "Data can be downloaded in different file formats"
-- "Constraints can be added to a dataset search"
+- "You can't go back in time and collect some kinds of metadata. You have to keep good notes and records."
 ---
-# Exploring an ERDDAP data catalog
 
-### What is ERDDAP?
+## Where are we?
 
-When scientists make their data available online for people to re-use  it, there can often still be barriers that stand in the way of easily  doing so. Reusing data from another source is difficult:
+Now we are going to talk about what you can do during the Analysis phase of your data life cycle to implement FAIR practices.
 
-- different way of requesting data
-- different formats: you work with R while colleague is working with Matlab and the other one with python
-- Need for standardised metadata
+## Provenance
 
-**This is where ERDDAP comes in.** It gives data  providers the ability to, in a consistent way, download  subsets of  gridded and tabular scientific datasets in common file formats and make  graphs and maps.
+Have you ever come back to plots or data you created and have no idea how you make them? At that point the provenance is gone.  You can't go back in time and collect some kinds of metadata. You have to keep good notes and records while you work with your data.
 
-<img src="../fig/erddap.png" alt="erddap" style="zoom:20%;" />
+## What to keep in mind during your analyses
 
+- **Document where you get your source data** so you can cite it later.  If you collected it yourself, make sure you have all the metadata about how, when, and where you collected it. Keep notes about what processing you do to the data. 
+- **Keep your source data separate from your analysis tables**. Never manipulate your source data during your analyses! Make a separate copy for manipulating however you need to during the analyses. Make a system to keep track of your workflow and identify different data tables.  This can be a formal version control system (e.g. git/github) or a documented plan for folder and file naming conventions along with notes.
+- **Write notes like you are explaining it to someone else.**  Look at your plots and data and pretend you are stepping someone else through how you would produce the same thing.  Even if you come back to it yourself in the future, it's likely you would have forgotten all the details. Help yourself out with good documentation.
+- **Record the filename and path you save to.** Make it clear what was done to produce each file. 
 
+> Example notes:
+> 
+> 2022-06-22: 
+> Downloaded a subset of dataset "Niskin bottle samples" which spans 2004 to 2008 to folder "BATS_niskin/orig/bcodmo_dataset_3782_2004_to_2008.csv"
+> 
+> data source citation:
+> Johnson, R. (2019) Niskin bottle water samples and CTD measurements at water sample depths collected at Bermuda Atlantic Time-Series sites in the Sargasso Sea ongoing from 1955-01-29 (BATS project). Biological and Chemical Oceanography Data Management Office (BCO-DMO). (Version 1) Version Date 2019-05-29 [Subset 2004 to 2008]. http://lod.bco-dmo.org/id/dataset/3782 [Accessed on 2022-06-22]
+>
+> Data were binned data by hour, ordered table by station, cast, pressure and saved to "BATS_niskin_2004_to_2008/hourly/BATS_niskin_hourly.xlsx" 
+> * exported Sheet 1 to "BATS_niskin_2004_to_2008/hourly/BATS_niskin_hourly.csv." 
+> * exported plot in Sheet 2 to "BATS_niskin_2004_to_2008/hourly/BATS_profiles.png"
 
-There is no “1 ERDDAP server”, instead organisations and repositories  have their own erddap server to distribute data to end users. These  users can request data and get data out in various file formats.  Many  institutes, repo’s and organizations (including [NOAA](https://coastwatch.pfeg.noaa.gov/erddap/index.html), [NASA](https://podaac-uat.jpl.nasa.gov/erddap/index.html), and [USGS](https://geoport.usgs.esipfed.org/erddap/index.html)) run ERDDAP servers  to serve their data.
-
-BCO-DMO has its own erddap server that is continuously being updated. We added ERDDAP badges to make it easy for new users to grab the dataset in the format they need.
-
-<img src="../fig/erddap-bats.png" alt="erddap-bcodmo" style="zoom:30%;" />
-
-## Downloading Data
-
-For this example, we'll zoom in on the BATS CTD dataset that BCO-DMO is serving. The dataset landing page can be found here: [https://www.bco-dmo.org/dataset/3918](https://www.bco-dmo.org/dataset/3918)
-
-This dataset has data from 1988 to 2016, so it is a very big dataset. Clicking on the "view table" button will try to pull up the data table, but it is very big and not easily to pull up and to download.
-
-<img src="../fig/erddap-bats-dataview.png" alt="erddap-bats-bcodmo" style="zoom:30%;" />
-
-**Subsetting a dataset in ERDDAP**
-
-An easier way to download the data is to subset it. Which means taking a slice of the dataset that you are interested in particulary.
-
-<img src="../fig/erddap-subsetdata.png" alt="erddap-subset" style="zoom:30%;" />
-
-<img src="../fig/erddap-subsetting.png" alt="erddap-subsetting" style="zoom:30%;" />
-
-
-
-
-
-## Dataset information
-
-Within the search results you have access to information about each dataset to help you decide with which dataset is useful for your application.  
-
-![image-20211026190530727](../assets/img/image-20211026190530727.png)
-
-
-
-The listing (pictured above) gives access to a lot of information about the dataset. In a browser, try the following:
-* Mouse over the question mark `?` under **Summary** to get an overview of the dataset.
-* Click **"Background info"** to get more complete information from the data provider about the dataset. Now go back to the search results page.
-* Click the `"M"` under **"ISO,Metadata"** to see all of the dataset metadata. A lot of information is displayed. Some important fields are:
-  * Global attributes (general metadata) vs variable attributes (variable names & units)
-  * `"geospatial_lat_min"`, `"geospatial_lat_max"`, `"geospatial_lon_min"`, and `"geospatial_lon_max"` for the spatial coverage
-  * `"references"` for citing the dataset in publications
-  * `"license"` for restrictions on using the data
-  * `"acknowledgement"` often used to describe how to acknowledge use of the dataset
-  * time: ERDDAP standardizes the dates+times in the results.  Data from other data servers is hard to compare    because the dates+times often are expressed in different formats    (for example, "Jan 2, 2018", 02-JAN-2018, 1/2/18, 2/1/18,    2018-01-02, "days since Jan 1, 1900").  For string times, ERDDAP always uses the ISO 8601:2004(E) standard format,    for example, 2018-01-02T00:00:00Z.  For numeric times, ERDDAP always uses "seconds since 1970-01-01T00:00:00Z".  ERDDAP always uses the Zulu (UTC, GMT) time zone to remove the difficulties    of working with different time zones and standard time versus daylight saving time.
-
-
-These standardised variables are important for the dataset to be able to be "read" by other end-users and machines.
-
-For example Google dataset search:
-
-* open google dataset search: https://datasetsearch.research.google.com/
-
-* search for the dataset id of the dataset above: bcodmo_dataset_783911
-
-  ![image-20211026155703527](../assets/img/image-20211026155703527.png)
-
-
+Having clear records about how a plot was produced with the table you used to produce it is very important for reports and journal publications.  It allows your results to be reproducible, transparent, and fascilitate peer review. It also makes writing your publication easier since you already have the figure captions written!
