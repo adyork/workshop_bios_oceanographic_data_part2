@@ -3,16 +3,14 @@ title: "Tabular Data & Spreadsheets"
 teaching: 5
 exercises: 0
 questions:
-- "Why is the focus on spreadsheets?"
-- "What are spreadsheet drawbacks?"
-- "How can spreadsheets be used in a research project?"
-- "What other data exist that does not use spreadsheets?"
+- "Why focussing on spreadsheets?"
+- "What are the drawbacks?"
+- "What other data types exist?"
 objectives:
-- "Using spreadsheets appropriately in a research project, based on their pro and cons
+- Use spreadsheets appropriately in research projects"
 keypoints:
-- "Good Data Management pracitces for tabular data."
+- "Good Data Management practices for tabular data."
 - "Working with a real life data example"
-
 ---
 
 ### Data organization and the data life cycle
