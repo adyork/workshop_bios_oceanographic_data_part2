@@ -92,17 +92,19 @@ There are a handful of solutions for enforcing uniform UNIX-style line endings o
 
 1. When exporting from Excel, save as a “Windows comma separated (.csv)” file
 2. If you store your data file under version control using Git, edit the `.git/config` file in your repository to automatically translate `\r\n` line endings into `\n`.
-Add the following to the file ([see the detailed tutorial](http://nicercode.github.io/blog/2013-04-30-excel-and-line-endings)):
+   Add the following to the file ([see the detailed tutorial](http://nicercode.github.io/blog/2013-04-30-excel-and-line-endings)):
 
 		[filter "cr"]
-    		clean = LC_CTYPE=C awk '{printf(\"%s\\n\", $0)}' | LC_CTYPE=C tr '\\r' '\\n'
-    		smudge = tr '\\n' '\\r'` 
-    
+   		clean = LC_CTYPE=C awk '{printf(\"%s\\n\", $0)}' | LC_CTYPE=C tr '\\r' '\\n'
+   		smudge = tr '\\n' '\\r'` 
+   
+
  	and then create a file `.gitattributes` that contains the line:
- 
+ 	 
  		*.csv filter=cr
- 
-	
+
+
+​	
 3. Use [dos2unix](http://dos2unix.sourceforge.net/) (available on OSX, *nix, and Cygwin) on local files to standardize line endings.
 
 #### A note on R and `.xlsx`

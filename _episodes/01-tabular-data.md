@@ -14,7 +14,7 @@ keypoints:
 - "Working with a real life data example"
 ---
 
-### Data organization
+### Data organization and the data life cycle
 
 Good data organization is the foundation of your research project and should already be part in the acquisition phase of a research project. 
 
@@ -30,7 +30,9 @@ Most researchers have data or do data entry in spreadsheets. Spreadsheet program
 
 Many spreadsheet programs are available. Since most participants utilize Excel as their primary spreadsheet program, this lesson will make use of Excel examples.
 
-![survey-result](../fig/survey-results-tools.png)
+<img src="../fig/survey-results-tools.png" alt="data-types" style="zoom:25%;" />
+
+
 
 NOTE: Excel is **proprietary software**, which means that it is owned by a company that is restricting the ways it can be used. A free spreadsheet program that can also be used is LibreOffice.
 
@@ -59,11 +61,11 @@ We do a lot of different operations in spreadsheets. What kind of operations do 
 
 Spreadsheets are good for **data entry**, but in reality we tend to use spreadsheet programs for much more than data entry. We use them to create data tables for publications, to generate summary statistics, and make figures.
 
-Generating **tables for publications** in a spreadsheet is not optimal - often, when formatting a data table for publication, we’re
-reporting key summary statistics in a way that is **not really meant to be read as data**, and often involves special formatting
-(merging cells, creating borders, making it pretty). We advise you to do this sort of operation within your document editing software.
+Generating **tables for publications** in a spreadsheet is not optimal - often, when formatting a data table for publication, we’re reporting key summary statistics in a way that is **not really meant to be read as data**, and often involves special formatting (merging cells, creating borders, making it pretty). 
 
-The latter two applications, generating statistics and figures, should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to **replicate your steps** (much less retrace anyone else's), particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a  command-line based statistics program like R or SAS, it’s practically impossible to apply a calculation to one observation in your  dataset but not another unless you’re doing it on purpose. 
+![publication-layout](../fig/layout-publication.png)
+
+The latter two applications, **generating statistics and figures**, should be used with caution: because of the graphical, drag and drop nature of spreadsheet programs, it can be very difficult, if not impossible, to **replicate your steps** (much less retrace anyone else's), particularly if your stats or figures require you to do more complex calculations. Furthermore, in doing calculations in a spreadsheet, it’s easy to accidentally apply a slightly different formula to multiple adjacent cells. When using a  command-line based statistics program like R or SAS, it’s practically impossible to apply a calculation to one observation in your  dataset but not another unless you’re doing it on purpose. 
 
 ### Using Spreadsheets for Data Entry and Cleaning
 
@@ -76,7 +78,6 @@ In this lesson we're going to talk about:
 1. [Formatting data tables in spreadsheets](../01-format-data/)
 2. [Formatting problems](../02-common-mistakes/)
 3. [Dates as data](../03-dates-as-data/)
-4. [Quality control](../04-quality-control/)
 5. [Exporting data](../05-exporting-data/)
 
 ### Why aren't we teaching data analysis in spreadsheets
@@ -85,13 +86,11 @@ In this lesson we're going to talk about:
 
 - It is also difficult to track or reproduce statistical or plotting analyses done in spreadsheet programs when you want to go back to your work or someone asks for details of your analysis.
 
-
-
-
-
-### Other Data Types
+### Not all data is tabular
 
 The focus of this class is tabular data. However, it is important to note that there are other data types out there such as documents, experimental data, fasta files, spectral counts, code, images, maps. 
+
+<img src="../fig/other-data-types.png" alt="data-types" style="zoom:0%;" />
 
 
 
