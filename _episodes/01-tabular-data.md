@@ -12,6 +12,7 @@ objectives:
 keypoints:
 - "Good Data Management pracitces for tabular data."
 - "Working with a real life data example"
+
 ---
 
 ### Data organization and the data life cycle
