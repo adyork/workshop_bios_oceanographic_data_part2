@@ -3,46 +3,15 @@ title: "BCO-DMO Data Access"
 teaching: 10
 exercises: 5
 questions:
-- "What do we decide what data to work with?  Does a dataset have the quality and metadata we need to analyze it?"
-objectives:
-- "Identify key aspects of data and metadata quality. Download a dataset and assess it."
-keypoints:
-- "Good data organization is the foundation of any research project."
----
-
-
-
-
-## Downloading a Dataset
-
-Previously we covered some ways you can [access data from the ERDDAP server](../08_erddap_catalog_search/index.html), but you can also download a whole dataset from the Dataset Metadata Page itself. There are buttons to easily download data in many file formats.
-
-[![AE1910_CTD bottle badges](../fig/AE1910_CTD_badges.png)](https://www.bco-dmo.org/dataset/774958)
-
-You can click the `CSV` button to download the data table in csv-format.  You can then open it in the editor of your choice. Below is what it looks like in Excel.
-
-![csv in excel](../fig/ctd_data_in_excel.png)
-
-
-
----
-title: "Downloading data using ERDDAP"
-teaching: 25
-exercises: 10
-questions:
 - "How do I search for data in ERDDAP?"
-- "What information does a dataset hold?"
 - "How can I subset a dataset?"
-- "How do I make a graph in ERDDAP?"
+- "How do I download a dataset?"
 objectives:
-- "Understand all the different factors for reusing online data with ERDDAP"
+- "Downloading data with erddap"
+- "Downloading data using the dataset buttons"
 keypoints:
-- "Searching an ERDDAP data catalog can be done using a web page"
 - "Data can be downloaded in different file formats"
-- "Constraints can be added to a dataset search"
 ---
-# Exploring an ERDDAP data catalog
-
 ### What is ERDDAP?
 
 When scientists make their data available online for people to re-use  it, there can often still be barriers that stand in the way of easily  doing so. Reusing data from another source is difficult:
@@ -62,6 +31,28 @@ There is no “1 ERDDAP server”, instead organisations and repositories  have 
 BCO-DMO has its own erddap server that is continuously being updated. We added ERDDAP badges to make it easy for new users to grab the dataset in the format they need.
 
 <img src="../fig/erddap-bats.png" alt="erddap-bcodmo" style="zoom:30%;" />
+
+
+## Downloading a Dataset
+
+Previously we covered some ways you can [access data from the ERDDAP server](../08_erddap_catalog_search/index.html), but you can also download a whole dataset from the Dataset Metadata Page itself. There are buttons to easily download data in many file formats.
+
+[![AE1910_CTD bottle badges](../fig/AE1910_CTD_badges.png)](https://www.bco-dmo.org/dataset/774958)
+
+You can click the `CSV` button to download the data table in csv-format.  You can then open it in the editor of your choice. Below is what it looks like in Excel.
+
+![csv in excel](../fig/ctd_data_in_excel.png)
+
+
+
+
+- "Understand all the different factors for reusing online data with ERDDAP"
+keypoints:
+- "Searching an ERDDAP data catalog can be done using a web page"
+- "Data can be downloaded in different file formats"
+- "Constraints can be added to a dataset search"
+
+
 
 ## Downloading Data
 
@@ -83,32 +74,3 @@ An easier way to download the data is to subset it. Which means taking a slice o
 
 
 
-## Dataset information
-
-Within the search results you have access to information about each dataset to help you decide with which dataset is useful for your application.  
-
-![image-20211026190530727](../assets/img/image-20211026190530727.png)
-
-
-
-The listing (pictured above) gives access to a lot of information about the dataset. In a browser, try the following:
-* Mouse over the question mark `?` under **Summary** to get an overview of the dataset.
-* Click **"Background info"** to get more complete information from the data provider about the dataset. Now go back to the search results page.
-* Click the `"M"` under **"ISO,Metadata"** to see all of the dataset metadata. A lot of information is displayed. Some important fields are:
-  * Global attributes (general metadata) vs variable attributes (variable names & units)
-  * `"geospatial_lat_min"`, `"geospatial_lat_max"`, `"geospatial_lon_min"`, and `"geospatial_lon_max"` for the spatial coverage
-  * `"references"` for citing the dataset in publications
-  * `"license"` for restrictions on using the data
-  * `"acknowledgement"` often used to describe how to acknowledge use of the dataset
-  * time: ERDDAP standardizes the dates+times in the results.  Data from other data servers is hard to compare    because the dates+times often are expressed in different formats    (for example, "Jan 2, 2018", 02-JAN-2018, 1/2/18, 2/1/18,    2018-01-02, "days since Jan 1, 1900").  For string times, ERDDAP always uses the ISO 8601:2004(E) standard format,    for example, 2018-01-02T00:00:00Z.  For numeric times, ERDDAP always uses "seconds since 1970-01-01T00:00:00Z".  ERDDAP always uses the Zulu (UTC, GMT) time zone to remove the difficulties    of working with different time zones and standard time versus daylight saving time.
-
-
-These standardised variables are important for the dataset to be able to be "read" by other end-users and machines.
-
-For example Google dataset search:
-
-* open google dataset search: https://datasetsearch.research.google.com/
-
-* search for the dataset id of the dataset above: bcodmo_dataset_783911
-
-  ![image-20211026155703527](../assets/img/image-20211026155703527.png)
