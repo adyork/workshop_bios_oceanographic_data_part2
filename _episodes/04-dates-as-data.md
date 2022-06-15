@@ -12,73 +12,24 @@ keypoints:
 - "Treating dates as multiple pieces of data rather than one makes them easier to handle."
 ---
 
+## Dates are finicky
+
+## Dates in Excel
 Dates in spreadsheets are stored in a single column. While this seems the most natural way to record dates, it actually is not best practice. A spreadsheet application will display the dates in a seemingly correct way (to a human observer) but how it actually handles and stores the dates may be problematic.
 
 In particular, please remember that functions that are valid for a given spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice, Gnumeric, etc.) are usually guaranteed to be compatible only within the same family of products. If you will later need to export the data and need to conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
 
 Additionally, Excel can [turn things that aren't dates into dates](https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/), for example names or identifiers like MAR1, DEC1, OCT4. So if you're avoiding the date format overall, it's easier to identify these issues. 
 
-<img src="../fig/date-excel-meme.png" alt="excel-meme" style="zoom:30%;" />
+<img src="../fig/date-excel-meme.png" alt="excel-meme" style="zoom:10%;" />
 
 
+## ISO 8601
+ISO 8601 is an international standard covering the communication of date and time related data. (Source wikipedia)
 
-> ## Exercise 
->
-> Challenge: pulling month, day and year out of dates 
->
-> - In the `dates` tab of your spreadsheet you have the data from 2014 plot 3. 
-> There's a `Date collected` column.
-> - Let’s extract month, day and year from the dates to new columns. For this we 
-> can use the built in Excel functions
->
-> `YEAR()`
-> `MONTH()`    
-> `DAY()`  
-> 
-> (Make sure the new column is formatted as a number and not as a date.)
->
-> You can see that even though you wanted the year to be 2014, your spreadsheet program
-> automatically interpreted it as 2015, the year you entered the data.
->
-> > ## Solution
-> > ![dates, exersize 1](../fig/solution_exercise_1_dates.png)
-> > {: .output}
-> {: .solution}
-{: .challenge}
+<img src="../fig/iso8601.png" alt="iso" style="zoom:30%;" />
 
-> ## Exercise
-> 
-> Challenge: pulling hour, minute and second out of the current time 
->
-> Current time and date are best retrieved using the functions `NOW()`, which
-> returns the current date and time, and `TODAY()`, which returns the current
-> date. The results will be formatted according to your computer's settings.
-> 
-> 1) Extract the year, month and day from the current date and time string
-> returned by the `NOW()` function.  
-> 2) Calculate the current time using `NOW()-TODAY()`.   
-> 3) Extract the hour, minute and second from the current time using
-> functions `HOUR()`, `MINUTE()` and `SECOND()`.  
-> 4) Press `F9` to force the spreadsheet to recalculate the `NOW()` function,
-> and check that it has been updated.  
-> > ## Solution
-> > 1) To get the year, type `=YEAR(NOW())` into any cell in your spreadsheet. To get the month, type `=MONTH(NOW())`. To get the day, type `=DAY(NOW())`.  
-> > 2) Typing `=NOW()-TODAY()` will result in a decimal value that is not easily human parsable to a clock-based time. You will need to use the strategies in the third part of this challenge to convert this decimal value to readable time.  
-> > 3) To extract the hour, type `=HOUR(NOW()-TODAY())` and similarly for minute and second.  
-> {: .solution}
-{: .challenge}
-
-## Preferred date format
-
-It is much safer to store dates with [YEAR, MONTH, DAY](#day) in separate columns or as [YEAR and DAY-OF-YEAR](#doy) in separate columns.
-
-**Note**: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data
-from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.
-If you’re working with historic data, be extremely careful with your dates!
-
-Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a
-different serial number than the [1900 date system](https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel). Because of this,
-[dates must be checked for accuracy when exporting data from Excel](http://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
+Standards in date and time notation are very important. For example the todays date June 15, 2022 is written in America as 06/15/22, while in Canada it is written as 15/06/2022. 
 
 ## Date formats in spreadsheets
 
@@ -94,11 +45,10 @@ The first thing you need to know is that Excel stores dates as numbers - see the
 
 (But wait. That’s the default on my version of Excel. We’ll get into how this can introduce problems down the line later in this lesson. )
 
-This serial number thing can actually be useful in some circumstances. By using
-the above functions we can easily add days, months or years to a given date.
-Say you had a sampling plan where you needed to sample every thirty seven days.
+This serial number thing can actually be useful in some circumstances. By using the above functions we can easily add days, months or years to a given date. Say you had a sampling plan where you needed to sample every thirty seven days.
 In another cell, you could type:
     
+
     =B2+37
 
 And it would return
@@ -142,6 +92,19 @@ fully aware of which format you’re using, you can end up actually entering you
 **Note**  
 You will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems if you use other software to manipulate the file.
 
+
+
+
+## Preferred date format
+
+It is much safer to store dates with [YEAR, MONTH, DAY](#day) in separate columns or as [YEAR and DAY-OF-YEAR](#doy) in separate columns.
+
+**Note**: Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data. If you’re working with historic data, be extremely careful with your dates!
+
+Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the [1900 date system](https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel). Because of this, [dates must be checked for accuracy when exporting data from Excel](http://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
+
+
+
 ### Advantages of Alternative Date Formatting
 
 ### <a name="day"></a> Storing dates as YEAR, MONTH, DAY
@@ -152,14 +115,11 @@ For instance this is a spreadsheet representing insect counts that were taken ev
 
 ![So, so ambiguous, it's even confusing Excel](../fig/6_excel_dates_2.jpg)
 
-If Excel was to be believed, this person had been collecting bugs **in the future**. Now, we have no doubt this person is highly capable,
-but I believe time travel was beyond even their grasp.
+If Excel was to be believed, this person had been collecting bugs **in the future**. Now, we have no doubt this person is highly capable, but I believe time travel was beyond even their grasp.
 
-Entering dates in one cell is helpful but due to the fact that the spreadsheet programs may interpret and save the data in different ways
-(doing that somewhat behind the scenes), there is a better practice.  
+Entering dates in one cell is helpful but due to the fact that the spreadsheet programs may interpret and save the data in different ways (doing that somewhat behind the scenes), there is a better practice.  
 
-In dealing with dates in spreadsheets, separate date data into separate fields (day, month, year), which will eliminate any chance of
-ambiguity. 
+In dealing with dates in spreadsheets, separate date data into separate fields (day, month, year), which will eliminate any chance ofambiguity. 
 
 ### <a name="doy"></a> Storing dates as YEAR, DAY-OF-YEAR
 
