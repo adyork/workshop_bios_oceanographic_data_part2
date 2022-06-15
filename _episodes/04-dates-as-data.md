@@ -72,12 +72,6 @@ As long as it is described and consistent in your date column.
 
 
 
-
-
-
-
-
-
 ## Preferred date format
 
 It is much safer to store dates with [YEAR, MONTH, DAY](#day) in separate columns or as [YEAR and DAY-OF-YEAR](#doy) in separate columns.
@@ -142,3 +136,20 @@ ISO 8601 is an international standard covering the communication of date and tim
 <img src="../fig/iso8601.png" alt="iso" style="zoom:30%;" />
 
 Standards in date and time notation are very important. For example the todays date June 15, 2022 is written in America as 06/15/22, while in Canada it is written as 15/06/2022. 
+
+## Whatever format you decide to use, document it
+
+Documenting the format you use is very important.  If you share your data in Excel or another program, the person recieving your data can verify what they see is what you intended if you write down the format.
+
+> Example: Ambiguous dates
+> 
+> You have a date in your dataset **11/4/12**.
+> If you are in America you may assume this is **November 4th, 2012**.
+> If you are in Europe you may assume this is **April 11th, 2012**.
+> If you are in Japan you may assume this is **April 12th, 2011**
+>
+> To be FAIR you have to think globally.  How do you make sure everyone can understand your data?  Describe it!
+>
+> ![dates by country](https://upload.wikimedia.org/wikipedia/commons/9/97/Date_format_by_country_NEW.svg)
+* image by Artem Karimov,TopoChecker (2019)
+<img src='../fig/year_global_legend.png' style="width:200px">
