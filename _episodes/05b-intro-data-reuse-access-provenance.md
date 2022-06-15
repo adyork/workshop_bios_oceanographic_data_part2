@@ -11,7 +11,7 @@ keypoints:
 ---
 
 What we will cover in Part II:
-- Learn how to assess a dataset to make sure it is ready for analysis.
+- How to assess a dataset to make sure it is ready for analysis.
 - Access and download a dataset from BCO-DMO.
 - Learn the benefits and drawbacks to analyzing data in spreadsheets.
 - Walkthrough data access and plotting to learn about document provenance.
