@@ -55,3 +55,5 @@ I'm sure everyone has experienced this frustration:
 > from: Wit and wisdom from Jorge Cham (http://phdcomics.com/)
 
 Git will keeps track of all the differences in your files over time, no need to keep a million copies!  You can make notes for each version of your files too.
+
+> Learn more about [Version Control and Git in a Software Carpentry](https://swcarpentry.github.io/git-novice/).
