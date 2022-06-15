@@ -151,5 +151,5 @@ Documenting the format you use is very important.  If you share your data in Exc
 > To be FAIR you have to think globally.  How do you make sure everyone can understand your data?  Describe it!
 >
 > ![dates by country](https://upload.wikimedia.org/wikipedia/commons/9/97/Date_format_by_country_NEW.svg)
-* image by Artem Karimov,TopoChecker (2019)
-<img src='../fig/year_global_legend.png' style="width:200px">
+> * image by Artem Karimov, TopoChecker (2019-04-09) [Date_format_by_country_NEW.svg,part of WikiProject Time](https://commons.wikimedia.org/wiki/File:Date_format_by_country_NEW.svg)
+> <img src='../fig/year_global_legend.png' style="width:25%">
