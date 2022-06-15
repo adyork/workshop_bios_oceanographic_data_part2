@@ -1,5 +1,5 @@
 ---
-title: "Assessing Datasets for reuse"
+title: "Assessing Datasets for Reuse"
 teaching: 10
 exercises: 0
 questions:
@@ -14,7 +14,7 @@ keypoints:
 
 ## Where are we in the  data life cycle?
 
-<img src="../fig/datalifecycle-reusepng.png" alt="datalifecycle" style="zoom:30%;" />
+<img src="../fig/datalifecycle-reusepng.png" alt="datalifecycle" style="width:30%;" />
 
 ## Assessing a Dataset
 
