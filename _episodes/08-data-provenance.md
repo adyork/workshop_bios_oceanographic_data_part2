@@ -49,6 +49,9 @@ However, there are specifications and tools you can learn that have huge benefit
 
 **Version control** (e.g. git/github) is a great way to keep track of all the changes in your files.  It does have a learning curve but will save you time and frustration in the long run after you learn it. 
 
+I'm sure everyone has experienced this frustration:
+
 > ![version_control_meme](../fig/ew-versions.png)
 > from: Wit and wisdom from Jorge Cham (http://phdcomics.com/)
 
+Git will keeps track of all the differences in your files over time, no need to keep a million copies!  You can make notes for each version of your files too.
