@@ -18,17 +18,26 @@ keypoints:
 
 ## Assessing a Dataset
 
-Let's take a look at an example CTD Dataset Metadata Page at BCO-DMO. 
+It is a wonderful thing that so much data is free and available online.  However, just because you can get it, does't mean it can be used for your analysis.
 
-**Dataset: AE1910 CTD Profiles**: [https://www.bco-dmo.org/dataset/774958](https://www.bco-dmo.org/dataset/774958)
+You need to be a responsible and critical researcher and examine the metadata and data to make sure it is good quality data, and has the critical metadata you need to use it.
 
-![AE1910_CTD_page1](../fig/AE1910_CTD_page1.png)
+There are plenty of well described data out there with methods documentation, processing desriptions, and description of the parameters measured with their units.
+But there are others with no information about what the data are, of how they are organized in the files provided.  You don't want to start your analysis only to realize later that you don't know the units of Oxygen in the data!  You'd have to abandon ship and look for another dataset.
+
+Take a look at the file format the data is in.  Do you have software that can load it?
 
 ## Reviewing the metadata
 
 Does the metadata include important context for using these data?  Does it indicate anything about the data quality? Is it preliminary or final?
 
 Can you find information about what is in each data column?  What are the units?
+
+### Example CTD Dataset Metadata Page at BCO-DMO
+
+**Dataset: AE1910 CTD Profiles**: [https://www.bco-dmo.org/dataset/774958](https://www.bco-dmo.org/dataset/774958)
+
+![AE1910_CTD_page1](../fig/AE1910_CTD_page1.png)
 
 > ## Exercise: Finding units
 >
