@@ -14,6 +14,8 @@ keypoints:
 
 Now we are going to talk about what you can do during the Analysis phase of your data life cycle to implement FAIR practices.
 
+<img src="../fig/datalifecycle-analysis.png" alt="datalifecycle-analysis" style="zoom:30%;" />
+
 ## Provenance
 
 Have you ever come back to plots or data you created and have no idea how you make them? At that point the provenance is gone.  You can't go back in time and collect some kinds of metadata. You have to keep good notes and records while you work with your data.

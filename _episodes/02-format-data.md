@@ -13,15 +13,19 @@ keypoints:
 - "Organize your data according to tidy data principles."  
 ---
 
-### Spreadsheets are not notebooks 
+### Spreadsheets are not lab notebooks 
 
-The most **common mistake** made is **treating spreadsheet programs like lab notebooks**, that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers don't view information the same way, and unless we explain to the computer what every single thing means (and that can be hard!), it will not be able to see how our data fits together.
-
-<img src="../fig/excel-notebook.png" alt="excel-noteook" style="zoom:30%;" />
+We know now that we can use spreadsheets for data entry. The most **common mistake** made is **treating spreadsheet programs like lab notebooks**, that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers don't view information the same way, and unless we explain to the computer what every single thing means (and that can be hard!), it will not be able to see how our data fits together.
 
 Using the power of computers, we can manage and analyze data in much more effective and faster ways, but to use that power, we have to **set up our data for the computer to be able to understand it** (and computers are very literal).
 
-This is why it’s extremely important to set up well-formatted tables from the outset - before you even start entering data from your very first preliminary experiment. **Data organization is the foundation of your research project.** It can make it easier or harder to work with your data throughout your analysis, so it's worth thinking about when you're doing your data entry or setting up your experiment. This is part of a **data management plan** and is an important step in thinking of your research project.
+<img src="../fig/labnotes.png" alt="data-life-cycle-acquisition" style="zoom:30%;" />
+
+Spreadsheet-like lab notebook:
+
+<img src="../fig/excel-notebook.png" alt="excel-noteook" style="zoom:30%;" />
+
+
 
 You can set things up in different ways in spreadsheets, but some of these choices can limit your ability to work with the data in other programs or have the you-of-6-months-from-now or your collaborator work with the data. These are the **interoperable and reusable parts of F.AI.I.R data principles.**
 
@@ -32,7 +36,7 @@ You can set things up in different ways in spreadsheets, but some of these choic
 When you're working with spreadsheets, during data clean up or analyses, it's very easy to end up with a spreadsheet that looks very different from the one you started with. In order to be able to reproduce your analyses or figure out what you did when Reviewer #3 asks for a different analysis, you should
 
 - create a new file with your cleaned or analyzed data. **Don't modify the original dataset**, or you will never know where you started!
-- keep track of the steps you took in your clean up or analysis. You should track these steps as you would any step in an experiment. We recommend that you do this in a plain text file stored in the same folder as the data file. 
+- **keep track of the steps you took in your clean up** or analysis. You should track these steps as you would any step in an experiment. We recommend that you do this in a plain text file stored in the same folder as the data file. 
 
 This might be an example of a spreadsheet setup:
 
@@ -40,7 +44,7 @@ This might be an example of a spreadsheet setup:
 
 Put these principles in to practice today during your Exercises.
 
->Note: This is out of scope for this lesson, but for information on how to maintain version control over your data, look at our lesson on ['Git'](http://swcarpentry.github.io/git-novice/).
+
 
 
 ### Structuring data in spreadsheets
@@ -97,15 +101,6 @@ start analyzing the data.
 > 
 > > ## Solution
 > > - Take about 10 minutes to work on this exercise.
-> > - All the mistakes in [02-common-mistakes](../02-common-mistakes) are present in the messy dataset. If the
-> > exercise is done during a workshop, ask people what they saw as wrong with
-> > the data. As they bring up different points, you can refer to [02-common-mistakes](../02-common-mistakes)
-> > or expand a bit on the point they brought up.
-> > - If you get a response where they've fixed the date, you can pause and go to the [03-dates-as-data](../03-dates-as-data) lesson. Or you can say you'll come back to dates at the end. 
-> {: .solution}
-> {: .challenge}
-
-An excellent reference, in particular with regard to R scripting is
-
-> Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of Statistical Software. [http://www.jstatsoft.org/v59/i10](http://www.jstatsoft.org/v59/i10).
+> >   {: .solution}
+> >   {: .challenge}
 
