@@ -14,18 +14,15 @@ keypoints:
 
 ## Where are we in the  data life cycle?
 
-<img src="../fig/datalifecycle-reusepng.png" alt="datalifecycle" style="width:30%;" />
+<img src="../fig/datalifecycle-reusepng.png" alt="datalifecycle" style="width:40%;" />
 
 ## Assessing a Dataset
 
 It is a wonderful thing that so much data is free and available online.  However, just because you can get it, does't mean it can be used for your analysis.
 
-You need to be a responsible and critical researcher and examine the metadata and data to make sure it is good quality data, and has the critical metadata you need to use it.
+You need to be a responsible and critical researcher and examine the metadata and data to make sure it is good quality data, and has the critical metadata you need to use it. You don't want to start your analysis only to realize later that you don't know the units of Oxygen in the data!  You'd have to abandon ship and look for another dataset.
 
-There are plenty of well described data out there with methods documentation, processing desriptions, and description of the parameters measured with their units.
-But there are others with no information about what the data are, of how they are organized in the files provided.  You don't want to start your analysis only to realize later that you don't know the units of Oxygen in the data!  You'd have to abandon ship and look for another dataset.
-
-Take a look at the file format the data is in.  Do you have software that can load it?
+Take a look at the type of file the data is in.  Do you have software that can load it?
 
 > ## Just because it is "Findable" that doesn't mean it is FAIR data!
 >
