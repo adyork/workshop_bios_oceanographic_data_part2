@@ -57,20 +57,13 @@ All excel cells have a value in them that have a format on top of them which is 
 * When opening excel files in other programs, that program might not interpret the format correctly. For example, opening an excel file in python will show the integer/number value of that cell, rather than the date. 
 
 
-
 ## Best Practices in Notation?
 
-There are several solutions to get around this, which depends on the way that you are using dates. 
+There are several solutions to get these date problems. Which one you use depends on the way that you are using dates. We will go through several options that are good for analysis and data reuse purposes. 
 
-* s
-* 
+While there are standards for dates, communities often have common conventions they use, and some software may require a specific format.  It may be easier to analyze data in some formats than others.  In some situtations you may need a date in one format during analysis, and then change it to another when you prepare your final data for preservation and archiving.
 
-As long as it is described and consistent in your date column. 
-
-
-
-
-
+Whatever the format you decide to use, it is important that you document your format.  It is a best practice to use one date format per data column.
 
 ## Preferred date format
 
