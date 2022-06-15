@@ -31,6 +31,8 @@ Take a look at the file format the data is in.  Do you have software that can lo
 
 Does the metadata include important context for using these data?  Does it indicate anything about the data quality? Is it preliminary or final?
 
+Look for any information about issues in the data. For example there may be a range of the data when a sensor was malfunctioning and the points were removed from the dataset.  It will show up as a gap in the time series you may need to consider when calculating statistics.
+
 Can you find information about what is in each data column?  What are the units?
 
 ### Example CTD Dataset Metadata Page at BCO-DMO
