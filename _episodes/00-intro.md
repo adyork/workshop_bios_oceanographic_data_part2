@@ -41,18 +41,15 @@ Table of content:
 
 
 
-### Part 2: Manipulation of F.A.I.R datasets
+### Part 2: Introduction to Data Reuse, Access and Provenance
 
 After this lesson, you will be able to:
 
-- Apply best practices in data table formatting we learned in previous lessons
-- Utilize basic quality control features and data manipulation practices
-- Perform basic statistical analyses and plotting.
-- Effectively export data from spreadsheet programs
+- Assess a dataset to see if it is fit for data reuse.
+- Learn about different methods for accessing data at BCO-DMO.
 - Learn the benefits and drawbacks to analyzing data in spreadsheets.
-- Learn about other ways to analyze data other than spreadsheets.
-
-
+- Create good records and metadata to help your future self, and enable FAIR data.
+- Learn about about other methods and tools for using data outside of spreadsheets.
 
 ### Content
 
