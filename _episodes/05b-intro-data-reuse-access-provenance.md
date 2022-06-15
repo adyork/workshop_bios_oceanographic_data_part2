@@ -17,6 +17,8 @@ What we will cover in Part II:
 - Walkthrough data access and plotting to learn about document provenance.
 - Learn about other ways to analyze data other than spreadsheets.
 
+## Introduction
+
 Spreadsheets are good for data entry, but in reality we tend to use spreadsheet programs for much more than data entry. We use them to create data tables for publications, to generate summary statistics, and make figures.
 
 ### Why is data analysis in spreadsheets challenging?
@@ -40,7 +42,6 @@ However, there are circumstances where you might want to use a spreadsheet  prog
 - How to *write code* in spreadsheet programs
 
 If you're looking to do this, a good reference is [Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/), published by O'Reilly.
-
 
 
 ## Background: What is a CTD?
