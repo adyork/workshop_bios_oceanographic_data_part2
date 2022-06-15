@@ -1,7 +1,7 @@
 ---
 title: "Dates as data"
-teaching: 10
-exercises: 3
+teaching: 7
+exercises: 
 questions:
 - "What are good approaches for handling dates in spreadsheets?"
 objectives:
@@ -15,39 +15,29 @@ keypoints:
 ## Dates are finicky
 
 ## Dates in Excel
-Dates in spreadsheets are stored in a single column. While this seems the most natural way to record dates, it actually is not best practice. A spreadsheet application will display the dates in a seemingly correct way (to a human observer) but how it actually handles and stores the dates may be problematic.
+Date formats in excel need special attention. There are many numerous “useful features” which allow them to handle dates in a variety of ways.
 
-In particular, please remember that functions that are valid for a given spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice, Gnumeric, etc.) are usually guaranteed to be compatible only within the same family of products. If you will later need to export the data and need to conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
-
-Additionally, Excel can [turn things that aren't dates into dates](https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/), for example names or identifiers like MAR1, DEC1, OCT4. So if you're avoiding the date format overall, it's easier to identify these issues. 
-
-<img src="../fig/date-excel-meme.png" alt="excel-meme" style="zoom:10%;" />
-
-
-## ISO 8601
-ISO 8601 is an international standard covering the communication of date and time related data. (Source wikipedia)
-
-<img src="../fig/iso8601.png" alt="iso" style="zoom:30%;" />
-
-Standards in date and time notation are very important. For example the todays date June 15, 2022 is written in America as 06/15/22, while in Canada it is written as 15/06/2022. 
-
-## Date formats in spreadsheets
-
-Spreadsheet programs have numerous “useful features” which allow them to handle dates in a variety of ways.
+There are different ways to visualize a date and as you work on your spreadsheet, the format may change unintentionally due to these features. Example: 
 
 ![Many formats, many ambiguities](../fig/5_excel_dates_1.jpg)
 
-But these "features" often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. 
+Those visualizations of dates are valid for a given spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice, Gnumeric, etc.) are usually guaranteed to be **compatible only within the same family of products**. 
 
-### Dates stored as integers
+Additionally, Excel can **[turn things that aren't dates into dates](https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/)**, for example names or identifiers like MAR1, DEC1, OCT4. So if you're avoiding the date format overall, it's easier to identify these issues. 
 
-The first thing you need to know is that Excel stores dates as numbers - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
+<img src="../fig/datetime-example.png" alt="mistakes-dates" style="zoom:30%;" />
 
-(But wait. That’s the default on my version of Excel. We’ll get into how this can introduce problems down the line later in this lesson. )
+<img src="../fig/date-excel-meme.png" alt="excel-meme" style="zoom:10%;" />
 
-This serial number thing can actually be useful in some circumstances. By using the above functions we can easily add days, months or years to a given date. Say you had a sampling plan where you needed to sample every thirty seven days.
-In another cell, you could type:
-    
+## What you see is not what everyone gets...
+
+Behind the scenes excel stores a date as numbers, which allows you to make calculations with dates as well as making plots
+
+Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the **serial number** 41822.
+
+This serial number thing can actually be useful in some circumstances. By using the above functions we can easily add days, months or years to a given date. Say you had a sampling plan where you needed to sample every thirty seven days. In another cell, you could type:
+
+ July 2, 2014 = 41822
 
     =B2+37
 
@@ -55,42 +45,35 @@ And it would return
 
     8-Aug
 
-because it understands the date as a number `41822`, and `41822 + 37 = 41859`
-which Excel interprets as August 8, 2014. It retains the format (for the most
-part) of the cell that is being operated upon, (unless you did some sort of
-formatting to the cell before, and then all bets are off). Month and year
-rollovers are internally tracked and applied.
+because it understands the date as a number `41822`, and `41822 + 37 = 41859` which Excel interprets as August 8, 2014. 
 
-**Note**
-Adding years and months and days is slightly trickier because we need to make
-sure that we are adding the amount to the correct entity.
 
-- First we extract the single entities (day, month or year)
-- We can then add values to do that
-- Finally the complete date string is reconstructed using the `DATE()` function.
 
-As for dates, times are handled in a similar way; seconds can be directly
-added but to add hour and minutes we need to make sure that we are adding
-the quantities to the correct entities.
+Take home message working with excel dates: 
 
-Which brings us to the many different ways Excel provides in how it displays dates. If you refer to the figure above, you’ll see that
-there are many ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not
-fully aware of which format you’re using, you can end up actually entering your data in a way that Excel will badly misinterpret. 
+All excel cells have a value in them that have a format on top of them which is what you see. This has implications when you want to share your data. 
 
-> ## Exercise  
-> What happens to the dates in the "dates" tab of our workbook if we save this sheet in Excel (in `csv` format) and then open the file in a plain text editor (like TextEdit or Notepad)? What happens to the dates if we then open the `csv` file in Excel?
-> > ## Solution
-> > - Click to the "dates" tab of the workbook and double-click on any of the values in the `Date collected` column. Notice that the dates display with the year 2015.   
-> > - Select `File -> Save As` in Excel and in the drop down menu for file format select `CSV UTF-8 (Comma delimited) (.csv)`. Click `Save`.  
-> > - You will see a pop-up that says "This workbook cannot be saved in the selected file format because it contains multiple sheets." Choose `Save Active Sheet`.   
-> > - Navigate to the file in your finder application. Right click and select `Open With`. Choose a plain text editor application and view the file. Notice that the dates display as month/day without any year information.   
-> > - Now right click on the file again and open with Excel. Notice that the dates display with the current year, not 2015.   
-> > As you can see, exporting data from Excel and then importing it back into Excel fundamentally changed the data!  
-> {: .solution}
-{: .challenge}
+* When you open a file in excel, it sometimes tries to interpret data as dates, sometimes it interprets the wrong format. 
+* When opening excel files in other programs, that program might not interpret the format correctly. For example, opening an excel file in python will show the integer/number value of that cell, rather than the date. 
 
-**Note**  
-You will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems if you use other software to manipulate the file.
+
+
+## Best Practices in Notation?
+
+There are several solutions to get around this, which depends on the way that you are using dates. 
+
+* s
+* 
+
+As long as it is described and consistent in your date column. 
+
+
+
+
+
+
+
+
 
 
 
@@ -107,7 +90,7 @@ Excel also entertains a second date system, the 1904 date system, as the default
 
 ### Advantages of Alternative Date Formatting
 
-### <a name="day"></a> Storing dates as YEAR, MONTH, DAY
+###  Storing dates as YEAR, MONTH, DAY
 
 Storing dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let's look at this issue a bit closer.
 
@@ -121,7 +104,7 @@ Entering dates in one cell is helpful but due to the fact that the spreadsheet p
 
 In dealing with dates in spreadsheets, separate date data into separate fields (day, month, year), which will eliminate any chance ofambiguity. 
 
-### <a name="doy"></a> Storing dates as YEAR, DAY-OF-YEAR
+### Storing dates as YEAR, DAY-OF-YEAR
 
 There is also another option. You can also store dates as year and day of year (DOY). Why? Because depending on your
 question, this might be what's useful to you, and there is practically no possibility for ambiguity creeping in.
@@ -133,7 +116,7 @@ So, can you convert all your dates into DOY format? Well, in Excel, here’s a u
 
 ![Kill that ambiguity before it bites you!](../fig/7_excel_dates_3.jpg)
 
-### <a name="str"></a> Storing dates as a single string
+###  Storing dates as a single string
 
 Another alternative could be to convert the date string
 into a single string using the `YYYYMMDDhhmmss` format.
@@ -151,3 +134,11 @@ ss:     seconds, i.e. 35
 Such strings will be correctly sorted in ascending or descending order, and by
 knowing the format they can then be correctly processed by the receiving
 software.
+
+## ISO 8601 Standard
+
+ISO 8601 is an international standard covering the communication of date and time related data. (Source wikipedia)
+
+<img src="../fig/iso8601.png" alt="iso" style="zoom:30%;" />
+
+Standards in date and time notation are very important. For example the todays date June 15, 2022 is written in America as 06/15/22, while in Canada it is written as 15/06/2022. 
