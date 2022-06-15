@@ -27,6 +27,14 @@ But there are others with no information about what the data are, of how they ar
 
 Take a look at the file format the data is in.  Do you have software that can load it?
 
+> ## Just because it is "Findable" that doesn't mean it is FAIR data!
+>
+>  There are more letters in FAIR acronym other than **F:Findable**.  
+> - There could be other barriers preventing your **A:Access**. 
+> - It might not be in an **I:Interoperable** format you can use.
+> - It might not have the details you need like units, and therefore it isn't **R:Reusable.** 
+{: .callout}
+
 ## Reviewing the metadata
 
 Does the metadata include important context for using these data?  Does it indicate anything about the data quality? Is it preliminary or final?
